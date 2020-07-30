@@ -1,1 +1,1 @@
-# legendcow.com
+# legendcow
