@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+html {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page-header {
+  width: 100%;
+  height: 40vh;
+  min-height: 200px;
+  margin-bottom: 8px;
+  color: #fff;
+  background-image: linear-gradient(to left bottom, #bb6bd1, #7793fa, #00b1ff, #00c8f5, #00d9d7, #4dd9b3, #7fd68d, #accf6d, #c7b94c, #e09e3e, #f28046, #fb5f5f);
+}
+
+.title {
+  margin-top: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 64em) {
+  .title {
+    font-size: 5.25rem;
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .title {
+    font-size: 4.25rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+.content {
+  width: 40%;
+  margin: auto;
+}
+
+.heading {
+  color: #7fd68d;
+  margin-top: 8px;
+}
+
+.paragraph {
+  color: #454545;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 75em) {
+  .heading {
+    font-size: 3.5rem;
+  }
+  .paragraph {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 42em) and (max-width: 78em) {
+  .content {
+    width: 60%;
+  }
+  .heading {
+    font-size: 3.25rem;
+  }
+  .paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  .page-header {
+    height: 20vh;
+  }
+  .content {
+    width: 80%;
+  }
+  .heading {
+    font-size: 2.75rem;
+  }
+  .paragraph {
+    font-size: 1.25rem;
+  }
+}
+
+.bottom-fade {
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
