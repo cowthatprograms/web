@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 html {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
+body {
+  background-color: #F9FAFC;
+}
+
+hr {
+  border-top: 2px dashed #aaa;
+  margin-bottom: 16px;
+}
+
 .page-header {
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   min-height: 200px;
-  margin-bottom: 8px;
   color: #fff;
   background-image: linear-gradient(to left bottom, #bb6bd1, #7793fa, #00b1ff, #00c8f5, #00d9d7, #4dd9b3, #7fd68d, #accf6d, #c7b94c, #e09e3e, #f28046, #fb5f5f);
 }
@@ -44,22 +52,63 @@ html {
 
 .content {
   width: 40%;
+  padding-left: 32px;
+  padding-right: 32px;
   margin: auto;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: #fff;
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .heading {
   color: #7fd68d;
-  margin-top: 8px;
+}
+
+.subheading {
+  color: #00c8f5;
 }
 
 .paragraph {
-  color: #454545;
-  margin-bottom: 8px;
+  color: #646478;
+  margin-bottom: 16px;
 }
 
-@media screen and (min-width: 75em) {
+.important {
+  font-weight: 700;
+}
+
+.important-sentence {
+  font-weight: 600;
+}
+
+.rainbow {
+  background: -webkit-linear-gradient(135deg, #bb6bd1, #7793fa, #00b1ff, #00c8f5, #00d9d7, #4dd9b3, #7fd68d, #accf6d, #c7b94c, #e09e3e, #f28046, #fb5f5f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tip {
+  color: #646478;
+  border-left: 6px solid #7fd68d;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  background-color: #f2f2fa;
+  font-style: italic;
+  font-size: 24px;
+  padding: 4px;
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 78em) {
   .heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .subheading {
+    font-size: 2.25rem;
   }
   .paragraph {
     font-size: 1.75rem;
@@ -71,7 +120,10 @@ html {
     width: 60%;
   }
   .heading {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
+  }
+  .subheading {
+    font-size: 2rem;
   }
   .paragraph {
     font-size: 1.5rem;
@@ -86,7 +138,10 @@ html {
     width: 80%;
   }
   .heading {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
+  }
+  .subheading {
+    font-size: 1.75rem;
   }
   .paragraph {
     font-size: 1.25rem;
