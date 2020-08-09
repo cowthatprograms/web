@@ -15,7 +15,7 @@
   line-height: 100vh;
   user-select: none;
   text-shadow: 8px 8px 8px #000;
-  opacity: 1;
+  opacity: 0;
   transition: 1s;
   display: none;
 }
@@ -45,6 +45,10 @@
   border-radius: 16px;
   outline: none;
   background-image: linear-gradient(to right, #bb6bd1, #7793fa, #00b1ff, #00c8f5, #00d9d7, #4dd9b3, #7fd68d, #accf6d, #c7b94c, #e09e3e, #f28046, #fb5f5f);
+}
+
+#fadeintext:hover {
+  cursor: pointer;
 }
 
 ::placeholder {

@@ -18,8 +18,8 @@
   </head>
   <body>
     <div id="background"></div>
-    <input id="textinput" placeholder="Type something..." onKeyDown="if (event.keyCode == 13) { input(); }" autofocus>
-    <h1 id="fadeintext">Fade In</h1>
+    <input id="textinput" placeholder="Type something..." onKeyDown="if (event.keyCode == 13) { input(); }" autocomplete="off" autofocus>
+    <h1 id="fadeintext" onclick="window.location.reload()" title="Press anywhere to try again!">Fade In</h1>
 
   </body>
 </html>
