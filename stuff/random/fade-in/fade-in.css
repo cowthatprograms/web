@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+}
+
+#title {
+  font-size: 12em;
+  background: -webkit-linear-gradient(45deg, #bb6bd1, #7793fa, #00b1ff, #00c8f5, #00d9d7, #4dd9b3, #7fd68d, #accf6d, #c7b94c, #e09e3e, #f28046, #fb5f5f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: fixed;
+  font-family: "Recursive", sans-serif;
+  font-weight: bold;
+  width: 50vw;
+  height: 25vh;
+  top: 20vh;
+  left: 25vw;
+  text-align: center;
 }
 
 #fadeintext {
@@ -35,7 +52,7 @@
   height: 10vh;
   padding: 48px 20px;
   margin: 0 10%;
-  margin-top: 45vh;
+  margin-top: 50vh;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 32px;
@@ -53,4 +70,59 @@
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.8);
+}
+
+#btn {
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  width: 300px;
+  height: 64px;
+  top: -68px;
+  right: 32px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to right, #00b1ff, #00c8f5, #00d9d7);
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 32px;
+  opacity: 0.7;
+  transition: top 1s ease;
+}
+
+#btn:hover {
+  transition: 0s linear;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#btn:active {
+  top: 35px;
+  height: 58px;
+  right: 35px;
+  width: 294px;
+  opacity: 1;
+}
+
+#copyAlert {
+  z-index: 11;
+  position: fixed;
+  width: 30%;
+  height: 20vh;
+  bottom: 70vh;
+  left: 35%;
+  box-shadow: 3px 3px 10px #000;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 20vh;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  user-select: none;
+  background-image: linear-gradient(to right, #00b1ff, #00c8f5, #00d9d7);
+  transition: 0.1s ease-in-out;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
 }
