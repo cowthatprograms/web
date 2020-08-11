@@ -4,7 +4,7 @@ window.onload = function() {
   var txt = url.searchParams.get("txt");
   if (txt[0] === '/') { txt = txt.substring(1); }
   if (txt.startsWith('eNc')) {
-    txt = txt.substring(2);
+    txt = txt.substring(3);
     txt = atob(txt);
   }
   document.getElementsByTagName('title').innerHTML = `Fade - ${txt}`;
