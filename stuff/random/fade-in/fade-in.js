@@ -23,7 +23,7 @@ function sleep(ms) {
 }
 
 async function copy() {
-  var copyText = `http://legendcow.com/stuff/random/fade?txt=${txt}`;
+  var copyText = `http://legendcow.com/stuff/random/fade?txt=${document.getElementById('textinput').value}`;
   navigator.clipboard.writeText(copyText);
   var copyAlert = document.getElementById('copyAlert');
   copyAlert.style.display = 'block';
