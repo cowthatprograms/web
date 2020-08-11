@@ -7,10 +7,10 @@ window.onload = function() {
   document.getElementById('text').innerHTML = txt;
   var len = txt.length;
   if (len <= 15) {
-    document.getElementById('fadeintext').style.fontSize = '14vw';
+    document.getElementById('text').style.fontSize = '14vw';
   } else if (len > 15 && len < 20) {
-    document.getElementById('fadeintext').style.fontSize = '11vw';
+    document.getElementById('text').style.fontSize = '11vw';
   } else {
-    document.getElementById('fadeintext').style.fontSize = '8vw';
+    document.getElementById('text').style.fontSize = '8vw';
   }
 }
