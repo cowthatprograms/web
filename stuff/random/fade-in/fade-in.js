@@ -1,4 +1,5 @@
 var txt;
+var copyText;
 
 async function fadein() {
   document.getElementById('title').style.display = 'none';
@@ -17,6 +18,8 @@ async function fadein() {
   }
   await sleep(1000);
   document.getElementById('btn').style.top = '32px';
+  await sleep(1000);
+  document.getElementById('btn2').style.top = '112px';
 }
 
 function input() {
@@ -29,8 +32,12 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function copy() {
-  var copyText = `http://legendcow.com/stuff/random/fade?txt=${txt.replace(/ /g, '%20')}`;
+async function copy(encryption) {
+  if (encryption === true) {
+    copyText = `http://legendcow.com/stuff/random/fade?txt=eNc${btoa(txt)}`;
+  } else {
+    copyText = `http://legendcow.com/stuff/random/fade?txt=${txt.replace(/ /g, '%20')}`;
+  }
   copyTextToClipboard(copyText);
   var copyAlert = document.getElementById('copyAlert');
   copyAlert.style.display = 'block';

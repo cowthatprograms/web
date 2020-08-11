@@ -100,6 +100,25 @@
   transition: top 1s ease;
 }
 
+#btn2 {
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  width: 300px;
+  height: 64px;
+  top: -68px;
+  right: 32px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to right, #00b1ff, #00c8f5, #00d9d7);
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 32px;
+  opacity: 0.7;
+  transition: top 1s ease;
+}
+
 #btn:hover {
   transition: 0s linear;
   cursor: pointer;
@@ -107,6 +126,20 @@
 }
 
 #btn:active {
+  top: 35px;
+  height: 58px;
+  right: 35px;
+  width: 294px;
+  opacity: 1;
+}
+
+#btn2:hover {
+  transition: 0s linear;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#btn2:active {
   top: 35px;
   height: 58px;
   right: 35px;
