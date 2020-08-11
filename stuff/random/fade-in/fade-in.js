@@ -7,7 +7,14 @@ async function fadein() {
   document.getElementById('fadeintext').style.display = 'block';
   await sleep(500);
   document.getElementById('fadeintext').style.opacity = '1';
-  document.getElementById('fadeintext').style.fontSize = '15em';
+  var len = txt.length;
+  if (len <= 15) {
+    document.getElementById('fadeintext').style.fontSize = '14vw';
+  } else if (len > 15 && len < 20) {
+    document.getElementById('fadeintext').style.fontSize = '11vw';
+  } else {
+    document.getElementById('fadeintext').style.fontSize = '8vw';
+  }
   await sleep(1000);
   document.getElementById('btn').style.top = '32px';
 }
@@ -23,13 +30,13 @@ function sleep(ms) {
 }
 
 async function copy() {
-  var copyText = `http://legendcow.com/stuff/random/fade?txt=${txt}`;
+  var copyText = `http://legendcow.com/stuff/random/fade?txt=${txt.replace(/ /g, '%20')}`;
   copyTextToClipboard(copyText);
   var copyAlert = document.getElementById('copyAlert');
   copyAlert.style.display = 'block';
   await sleep(100);
   copyAlert.style.opacity = '1';
-  await sleep(3000);
+  await sleep(2000);
   hide();
 }
 
@@ -55,4 +62,8 @@ function copyTextToClipboard(text) {
   textArea.select();
   document.execCommand('copy');
   document.body.removeChild(textArea);
+}
+
+function textFocus() {
+  document.getElementById('textinput').focus();
 }
