@@ -128,7 +128,7 @@
   text-align: center;
   user-select: none;
   background-image: linear-gradient(to right, #00b1ff, #00c8f5, #00d9d7);
-  transition: 0.1s ease-in-out;
+  transition: 0.5s ease-in-out;
   opacity: 0;
   display: none;
   cursor: pointer;

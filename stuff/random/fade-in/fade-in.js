@@ -29,6 +29,8 @@ async function copy() {
   copyAlert.style.display = 'block';
   await sleep(100);
   copyAlert.style.opacity = '1';
+  await sleep(3000);
+  hide();
 }
 
 function hide() {
