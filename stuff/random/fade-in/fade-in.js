@@ -34,7 +34,7 @@ function sleep(ms) {
 
 async function copy(encryption) {
   if (encryption === true) {
-    copyText = `http://legendcow.com/stuff/random/fade?txt=eNc${btoa(txt)}`;
+    copyText = `http://legendcow.com/stuff/random/fade?txt=eNc${btoa(txt).replace(/=/g, '')}`;
   } else {
     copyText = `http://legendcow.com/stuff/random/fade?txt=${txt.replace(/ /g, '%20')}`;
   }
