@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes loading {
+  0% {transform: rotate(0deg);}
+  63% {transform: rotate(380deg);}
+  78% {transform: rotate(360deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+   /* background: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68); */
+  background-color: #fff;
+  position: relative;
+}
+
+#loader {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loader-img {
+  width: 64px;
+  height: auto;
+  user-select: none;
+  animation-name: loading;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1); 
+}
