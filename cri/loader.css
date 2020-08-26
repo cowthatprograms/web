@@ -10,14 +10,17 @@
 }
 
 #loader-wrapper {
+  z-index: 1000;
   width: 100vw;
   height: 100vh;
-   /* background: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68); */
   background-color: #fff;
   position: relative;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 #loader {
+  z-index: 1001;
   display: block;
   position: absolute;
   top: 50%;
@@ -26,6 +29,7 @@
 }
 
 #loader-img {
+  z-index: 1002;
   width: 64px;
   height: auto;
   user-select: none;
