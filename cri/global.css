@@ -65,5 +65,7 @@
   * {
     display: none;
   }
-  .z-text: display: inline;
+  .z-text {
+    display: inline;
+  }
 }
