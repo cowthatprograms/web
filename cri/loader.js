@@ -18,7 +18,7 @@ async function refresh() {
   if (window.innerWidth > 1280) {
     title.style.marginTop = '10vh';
   } else {
-    title.style.marginTop = '0';
+    title.style.marginTop = '8px';
   }
 
   await sleep(500)
