@@ -59,6 +59,7 @@
   box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3), 0px 0px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.4s;
   user-select: none;
+  font-weight: 500;
 }
 
 .buttons button:nth-child(3n) { margin-right: 0;}
@@ -76,11 +77,11 @@
 
 @media screen and (max-width: 1280px) {
   .title {
-    font-size: 4.5em;
+    font-size: 4.75em;
     margin-top: -200px;
   }
   .text {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .buttons {
     width: 600px;

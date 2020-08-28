@@ -1,7 +1,7 @@
-// reload page on resize
+/* // reload page on resize
 $(window).bind('resize', function() {
   this.location.reload(false);
-});
+}); */
 
 function showBorder(id) {
   let elem = document.getElementById(id);

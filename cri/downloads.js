@@ -1,7 +1,9 @@
 function download(num) {
   let filename;
-  if (num === 1) {filename = 'cri-encode.py'}
-  if (num === 3) {filename = 'cri-decode.py'}
+  if (num === 1) {filename = 'cri-encoder.py'}
+  else if (num === 2) {filename = 'cri-decoder.py'}
+  else if (num === 3) {filename = 'cri-encoder-condensed.py'}
+  else if (num === 4) {filename = 'cri-decoder-condensed.py'}
   fetch('http://legendcow.com/cri/tools/' + filename)
   .then(resp => resp.blob())
   .then(blob => {
