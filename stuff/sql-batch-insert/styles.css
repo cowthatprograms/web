@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {overflow: hidden;}
+
+.header {
+  width: 100%;
+  height: 350px;
+}
+
+.header-text {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 96px;
+  line-height: 350px;
+  text-align: center;
+  user-select: none;
+}
+
+.form {
+  width: 100%;
+  transition: transform 1s;
+}
+
+#table-name {transform: translateY(-192px);}
+#column-names {transform: translate(-100vw, -192px);}
+
+.input {
+  color: #fff;
+  width: 80%;
+  height: 128px;
+  margin: 0 10% 64px 10%;
+  padding: 12px 24px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  border: none;
+  border-radius: 76px;
+  text-align: center;
+  outline: none;
+  transition: transform 1s;
+  z-index: 10;
+  background-image: linear-gradient(to bottom right, #00c6fb, #005bea);
+}
+
+::placeholder { color: rgba(255, 255, 255, 0.8); }
+.column { background-image: linear-gradient(to bottom right, #9986fb, #aa2bea); }
+
+.sql {
+  box-sizing: border-box;
+  width: 60%;
+  min-height: 96px;
+  max-height: 750px;
+  margin: auto;
+  padding: 36px 48px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 36px;
+  color: #fff;
+  border-radius: 48px;
+  background-image: linear-gradient(to bottom, #00c6fb, #005bea);
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.sql:active {
+  background-image: linear-gradient(to bottom, #00c6fb, #00c6fb);
+  box-shadow: none;
+}
