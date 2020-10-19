@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body { background-color: #68E8F6; }
+
+textarea {
+  width: 40vw;
+  height: 25vh;
+  margin: 64px 48px;
+  padding: 32px;
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.4;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #1CBFD0;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  box-shadow: 0 0 5px #1CBFD0;
+}
+
+::placeholder { color: #ddd; }
+
+#time { float: left; }
+
+#output { float: right; }
