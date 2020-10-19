@@ -8,7 +8,7 @@ setInterval(function() {
 }, 100)
 
 function timeToEmotes(time) {
-  time = time.match(/(\d{2}):(\d{2})\s?\/\s?(\d{2}):(\d{2})/);
+  time = time.match(/(\d{1,2}):(\d{2})\s?\/\s?(\d{1,2}):(\d{2})/);
   if (time === null) { return 'not a time you fool'; }
   let current = time[1] * 60 + Number(time[2]);
   let end = time[3] * 60 + Number(time[4]);
