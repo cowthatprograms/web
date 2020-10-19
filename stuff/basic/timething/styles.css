@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-body { background-color: #68E8F6; }
+body { background-color: #4B4B50; }
 
 textarea {
   width: 40vw;
@@ -13,15 +13,22 @@ textarea {
   border: none;
   border-radius: 16px;
   color: #fff;
-  background-color: #1CBFD0;
+  background-color: #323237;
   overflow: auto;
   outline: none;
   resize: none;
-  box-shadow: 0 0 5px #1CBFD0;
+  box-shadow: 0 0 10px #FA1919;
 }
 
 ::placeholder { color: #ddd; }
 
 #time { float: left; }
 
-#output { float: right; }
+#output {
+  float: right;
+  cursor: pointer;
+}
+
+#output:active {
+  transform: translate(2px, 2px)
+}
