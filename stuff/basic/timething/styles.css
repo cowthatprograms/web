@@ -5,7 +5,7 @@ body { background-color: #68E8F6; }
 textarea {
   width: 40vw;
   height: 25vh;
-  margin: 64px 48px;
+  margin: 64px 3vw;
   padding: 32px;
   font-size: 24px;
   font-family: 'Cabin', sans-serif;
