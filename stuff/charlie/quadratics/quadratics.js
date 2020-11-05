@@ -4,13 +4,19 @@ onload = function() {
   c = document.getElementById('c');
   a1 = document.getElementById('answer1');
   a2 = document.getElementById('answer2');
+  decimals = document.getElementById('decimals');
 }
 
-function solve(decimals) {
+function solve() {
   let answer = quadratic(Number(a.value), Number(b.value), Number(c.value));
   if (!isNaN(answer[0])) {
-    a1.innerHTML = answer[0];
-    a2.innerHTML = answer[1];
+    try {
+      a1.innerHTML = answer[0].toFixed(decimals.value);
+      a2.innerHTML = answer[1].toFixed(decimals.value);
+    } catch {
+      a1.innerHTML = answer[0];
+      a2.innerHTML = answer[1];
+    }
   } else {
     a1.innerHTML = '';
     a2.innerHTML = '';
