@@ -10,13 +10,8 @@ onload = function() {
 function solve() {
   let answer = quadratic(Number(a.value), Number(b.value), Number(c.value));
   if (!isNaN(answer[0])) {
-    try {
-      a1.innerHTML = answer[0].toFixed(decimals.value);
-      a2.innerHTML = answer[1].toFixed(decimals.value);
-    } catch {
-      a1.innerHTML = answer[0];
-      a2.innerHTML = answer[1];
-    }
+    a1.innerHTML = answer[0].toFixed(decimals.value);
+    a2.innerHTML = answer[1].toFixed(decimals.value);
   } else {
     a1.innerHTML = '';
     a2.innerHTML = '';
