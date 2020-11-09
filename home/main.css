@@ -1,0 +1,13 @@
+.light-gray {
+  background-color: #f3f3f3;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #38B2AC;
+  width: 90vw;
+  margin: auto;
+}
