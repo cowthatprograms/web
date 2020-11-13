@@ -11,3 +11,7 @@ hr {
   width: 90vw;
   margin: auto;
 }
+
+a {
+  cursor: pointer;
+}
