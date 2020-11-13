@@ -57,7 +57,7 @@ function factor(a, b, c, letter) {
 function factorEquation() {
   let equation = document.getElementById('equation').value;
   // organize variables
-  let parts = equation.match(/(–?\d+)?(\w)\d\+?(–?\d+)\w\+?(–?\d+)/);
+  let parts = equation.match(/(–?-?\d+)?(\w)\d\+?(–?-?\d+)\w\+?(–?-?\d+)/);
   parts[1] = parts[1] ? parts[1] : '1';
   let [a, b, c, letter] = [parts[1], parts[3], parts[4], parts[2]];
   [a, b, c] = [a, b, c].map((num) => Number(num.replace('–', '-')));
