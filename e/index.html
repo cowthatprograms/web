@@ -24,21 +24,20 @@
   </head>
   <body>
     <h1>E generator</h1>
-    <p>I don't care if it looks bad right now I'll style it later</p>
-    <p>Size 5 and above are too large to be sent in discord (unless sent in code block)</p>
+    <p>Size 5 is too large to be sent in discord (unless sent in code block)</p>
     <label for="size">Select a size:</label>
     <select id="size" name="size">
-      <option value="1" default>1 (5 lines)</option>
+      <option value="1">1 (5 lines)</option>
       <option value="2">2 (10 lines)</option>
-      <option value="3">3 (15 lines)</option>
+      <option value="3" selected>3 (15 lines)</option>
       <option value="4">4 (20 lines)</option>
       <option value="5">5 (25 lines)</option>
-      <option value="6">6 (30 lines)</option>
-      <option value="7">7 (35 lines)</option>
     </select><br><br>
     <input type="text" id="character" placeholder="emoji / emoji name">
     <button onclick="generateE()">Generate</button>
     <button onclick="copyE()">Copy</button>
+    <br><br><input type="range" name="size" id="sizeRange" min="1" max="5" oninput="sizeChange()">
+    <label for="name">Size</label><br>
     <h2 id="output"></h2>
   </body>
 </html>

@@ -2,9 +2,23 @@ onload = function() {
   character = document.getElementById('character');
   output = document.getElementById('output');
   size = document.getElementById('size');
+  sizeRange = document.getElementById('sizeRange')
 }
 
 function generateE(s = size.value) {
+  sizeRange.value = s;
+  let c = character.value;
+  let e = [(c.repeat(s*3) + '<br>').repeat(s),
+  (c.repeat(s) + '<br>').repeat(s),
+  (c.repeat(s*3) + '<br>').repeat(s),
+  (c.repeat(s) + '<br>').repeat(s),
+  (c.repeat(s*3) + '<br>').repeat(s)].join('').slice(0, -4);
+  output.innerHTML = e;
+}
+
+function sizeChange(s = sizeRange.value) {
+  size.value = s;
+  if (output.innerHTML = '') { return; }
   let c = character.value;
   let e = [(c.repeat(s*3) + '<br>').repeat(s),
   (c.repeat(s) + '<br>').repeat(s),
