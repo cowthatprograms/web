@@ -19,11 +19,26 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <title>E generator</title>
+
+    <script src="index.js"></script>
   </head>
   <body>
     <h1>E generator</h1>
     <p>I don't care if it looks bad right now I'll style it later</p>
-    <input type="text" id="character" placeholder="Enter a character" maxlength="1">
+    <p>Size 5 and above are too large to be sent in discord (unless sent in code block)</p>
+    <label for="size">Select a size:</label>
+    <select id="size" name="size">
+      <option value="1" default>1 (5 lines)</option>
+      <option value="2">2 (10 lines)</option>
+      <option value="3">3 (15 lines)</option>
+      <option value="4">4 (20 lines)</option>
+      <option value="5">5 (25 lines)</option>
+      <option value="6">6 (30 lines)</option>
+      <option value="7">7 (35 lines)</option>
+    </select><br><br>
+    <input type="text" id="character" placeholder="emoji / emoji name">
     <button onclick="generateE()">Generate</button>
+    <button onclick="copyE()">Copy</button>
+    <h2 id="output"></h2>
   </body>
 </html>
